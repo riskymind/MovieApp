@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit
 
 const val API_KEY = "3eb71a6638d0e63a6c3a16d5b8eabfad"
 const val BASE_URL = "https://api.themoviedb.org/3/"
-const val POSTER_BASE_URL = ""
+const val POSTER_BASE_URL = "https://image.tmdb.org/t/p/w500"
 
 
 object TheMovieDBClient {
