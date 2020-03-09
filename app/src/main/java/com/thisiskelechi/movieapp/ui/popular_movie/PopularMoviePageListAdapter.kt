@@ -5,6 +5,7 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
@@ -79,8 +80,9 @@ class PopularMoviePageListAdapter(private val context: Context): PagedListAdapte
             Glide.with(itemView.context)
                 .load(moviesPosterUrl)
                 .into(itemView.popular_movie_poster)
+            git
 
-            itemView.setOnClickListener {
+            itemView.card_view.setOnClickListener {
                 val intent = Intent(context, SingleMovie::class.java)
                 intent.putExtra("id", movie?.id)
                 context.startActivity(intent)
