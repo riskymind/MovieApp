@@ -80,7 +80,6 @@ class PopularMoviePageListAdapter(private val context: Context): PagedListAdapte
             Glide.with(itemView.context)
                 .load(moviesPosterUrl)
                 .into(itemView.popular_movie_poster)
-            git
 
             itemView.card_view.setOnClickListener {
                 val intent = Intent(context, SingleMovie::class.java)
